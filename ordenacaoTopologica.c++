@@ -6,7 +6,8 @@
 using namespace std;
 
 
-struct vertice{
+struct vertice
+{
 	vector<int> listaAdjacencias;
 };
 
@@ -50,7 +51,7 @@ void ordenacaoTopologica(grafo g){
 	vector<int> resultado;
 	// Indica que o grafo nao tem nenhum vertice e que nao pode ser feita a ordenacao topologica
 	if (g.qtdVertices == 0){
-		cout << "Grafo sem vertices\n";
+		cout << "Grafo sem vertices\n\n";
 		return;
 	}
 
@@ -90,8 +91,8 @@ void ordenacaoTopologica(grafo g){
 				fila.push_back(adj[i]);
 		}	
 		posDaVez++;
-		if(posDaVez >= fila.size()){ // Verificando se o grafo tem ciclos
-			cout << "Ordenacao topologica nao permite grafos ciclicos\n";
+		if(posDaVez >= fila.size()){ // Vendo se o grafo eh digrafo aciclico
+			cout << "Ordenacao topologica nao permite grafos ciclicos\n\n";
 			return;
 		}
 	}
@@ -101,31 +102,30 @@ void ordenacaoTopologica(grafo g){
 }
 
 int main(){
-	// ETAPA 1 - LER O GRAFO
-	// Criacao do grafo
-	grafo g;
-	// Variavel temporaria para armazenar o numero do vertice a ser inserido
-	int nVertice;
-	// Quando seu valor eh igual a -1 nenhuma aresta a mais eh inserida no grafo
-	int nAdj;
-	// Lendo a quantidade de vertices que o grafo possuirah
-	cin >> g.qtdVertices;
-	// Inserindo elementos no grafo (vertices e suas adjacencias)
-	for(int i = 0; i < g.qtdVertices; i++){
-		// Criando um vertice
-		vertice v;		
-		cin >> nAdj;
-		while (nAdj > -1){
-			v.listaAdjacencias.push_back(nAdj);
+	int tamanhoGrafo;
+	while(scanf("%d", &tamanhoGrafo) == 1){
+		// ETAPA 1 - LER O GRAFO
+		// Criacao do grafo
+		grafo g;
+		// Quando seu valor eh igual a -1 nenhuma aresta a mais eh inserida no grafo
+		int nAdj;
+		// Lendo a quantidade de vertices que o grafo possuirah
+		g.qtdVertices = tamanhoGrafo;
+		// Inserindo elementos no grafo (vertices e suas adjacencias)
+		for(int i = 0; i < g.qtdVertices; i++){
+			// Criando um vertice
+			vertice v;		
 			cin >> nAdj;
+			while (nAdj > -1){
+				v.listaAdjacencias.push_back(nAdj);
+				cin >> nAdj;
+			}
+			g.listaVertices.push_back(v);
 		}
-		g.listaVertices.push_back(v);
+		// imprimeGrafo(g);
+
+		// ETAPA 2 - REALIZAR ORDENACAO TOPOLOGICA
+		ordenacaoTopologica(g);
 	}
-
-	// ETAPA 2 - VER SE O GRAFO EH DIGRAFO ACICLICO
-	// imprimeGrafo(g);
-
-	// ETAPA 3 - REALIZAR ORDENACAO TOPOLOGICA
-	ordenacaoTopologica(g);
 	return 0;
 }
