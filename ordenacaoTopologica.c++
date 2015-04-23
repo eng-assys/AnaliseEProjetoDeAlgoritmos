@@ -6,8 +6,7 @@
 using namespace std;
 
 
-struct vertice
-{
+struct vertice{
 	vector<int> listaAdjacencias;
 };
 
