@@ -1,5 +1,5 @@
 # Disciplina de Analise e Projetos de Algoritmos
-Repositórios para serem adicionados alguns códigos implmentados para a disciplina em questão. Cada "branch" criada é a implementação de um algoritmo diferente.
+Repositório para adicionar os códigos implmentados para a disciplina. Cada "branch" criada é a implementação de um algoritmo diferente.
 
   Algoritmos já implementados:
   
