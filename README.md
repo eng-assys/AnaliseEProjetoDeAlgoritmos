@@ -9,3 +9,5 @@ As entradas devem ser formatadas da seguinte maneira (veja o arquivo exemplo.in 
     2 - As adjacências de cada um dos seus vértices (para parar de inserir as adjacências de determinado vértice entre com o valor -1).
   
   Apresenta como saída: indicação de que o grafo não possui vértices, a lista contendo os vértices ordenados topologicamente, a indicação de que o grafo não é dígrafo acíclico.
+
+IMPLEMENTAçÃO FINALIZADA...
