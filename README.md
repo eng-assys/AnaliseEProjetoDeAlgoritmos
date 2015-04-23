@@ -3,8 +3,6 @@ Trabalho de Graduação - implementação do algoritmo
 
 As entradas serão entradas formatadas no estilo maratona de programação.
 
-Até o momento penso em fazer o programa em python ou em C++
-
 Explicando o algoritmo:
 
 O algoritmo em questão resolve o problema de encontrar o menor caminho entre todos os pares de vértices de um grafo orientado e ponderado. Ele apenas encontra os valores a serem percorridos, e não a sequência de arestas.
