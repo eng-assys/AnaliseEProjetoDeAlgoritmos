@@ -8,6 +8,11 @@ Na Ordenação topológica: os vértices de um "dígrafo acíclico" estão organ
     
             2 - As adjacências de cada um dos seus vértices (para parar de inserir as adjacências de determinado vértice entre com o valor -1).
   
-        Apresenta como saída: indicação de que o grafo não possui vértices, a lista contendo os vértices ordenados topologicamente, a indicação de que o grafo não é dígrafo acíclico.
+        Apresenta como saída: 
+                *Indicação de que o grafo não possui vértices;
+                
+                *Lista contendo os vértices ordenados topologicamente;
+                
+                *Indicação de que o grafo não é dígrafo acíclico.
 
 IMPLEMENTAçÃO FINALIZADA...
