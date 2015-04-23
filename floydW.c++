@@ -14,7 +14,7 @@ int min(int, int);
 
 /*
  * A representacao da matriz de adjacencia deve levar em consideracao
- * o numero -1 para dizer que nao existe caminho entre os vertices con-
+ * o numero -1 para dizer que nao existe caminho entre o vertice con-
  * siderado.
  * 
  * */
