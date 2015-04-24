@@ -16,7 +16,7 @@ O algoritmo em questão resolve o problema de encontrar o menor caminho entre to
 		   = infinito, caso contrário.
 
 		No programa escrito a representação da matriz de adjacência ed entrada deve levar em consideração números maiores que 32000 para dizer que nao existe caminho entre vértices.
- * 
+
  	=>A saída será uma matriz quadrada onde cada célula deve conter a distância mínima entre o vértice i e j. A entrada Dij contém o peso do camino mais curto do vértice i até o j.
 
 	ALGORITMO
