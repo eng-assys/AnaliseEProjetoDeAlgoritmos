@@ -15,7 +15,7 @@ O algoritmo em questão resolve o problema de encontrar o menor caminho entre to
 		   = o peso da aresta orientada (i, j), se i != j
 		   = infinito, caso contrário.
 
-		No programa escrito a representação da matriz de adjacência ed entrada deve levar em consideração números maiores que 32000 para dizer que nao existe caminho entre vértices.
+		Caso deseje representar que não existe caminho entre vértices, na matriz de adjacência de entrada, utilize números maiores que 32000.
 
  	=>A saída será uma matriz quadrada onde cada célula deve conter a distância mínima entre o vértice i e j. A entrada Dij contém o peso do camino mais curto do vértice i até o j.
 
