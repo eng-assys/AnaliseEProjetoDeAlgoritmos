@@ -14,8 +14,7 @@ int min(int, int);
 
 /*
  * A representacao da matriz de adjacencia deve levar em consideracao
- * o numero -1 para dizer que nao existe caminho entre o vertice con-
- * siderado.
+ * o numero 32000 para dizer que nao existe caminho entre vertices.
  * 
  * */
 
@@ -27,7 +26,7 @@ int main(){
 	for (int i = 0; i < nos_grafo; i++){		// Lendo a matriz de adjacencia
 		for (int j = 0; j < nos_grafo; j++){
 			cin >> matriz_adjacencia[i][j];
-			if(matriz_adjacencia[i][j] == -1){
+			if(matriz_adjacencia[i][j] >= 32000){
 				matriz_adjacencia[i][j] = INF;
 			}
 		}
